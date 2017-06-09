@@ -1,0 +1,266 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+html, body{
+  	font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+  	 background: #FFf;
+  	 -webkit-font-smoothing: antialiased;
+}
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+.hide{ display: none;}
+/*----start-container----*/
+.container{
+	width:70%;
+}
+/*-----start-header----*/
+.bg{
+	background:url(../images/baner.jpg) no-repeat 0px 0px;
+	background-size:cover;
+}
+.header{
+}
+.logo{
+	margin-top: 5.5em;
+	text-align: center;
+}
+.logo a{
+	text-decoration:none;
+}
+.logo a:hover{
+	text-decoration:none;
+}
+.logo320{
+	display:none;
+}
+/*----navbar-nav----*/
+.top-header{
+	padding: 0.8em 0em;
+}
+.logo a{
+	display:block;
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 768px) {
+	nav { 
+  		height: auto;
+  		float:none;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 100%;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #eee;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+  	}
+}
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 768px) {
+	nav {
+		border-bottom: 0;
+		float:none;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+		margin: 1.5em 0 0 0;
+		background: #fff;
+	}
+	nav a#pull {
+		display: block;
+		position: relative;
+		color: #F26D7D;
+		text-align: right;
+		position: absolute;
+		top: 23px;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	nav a#pull img{
+		margin-right: 0%;
+	}
+	.top-nav ul li a {
+		color: #2C3E50;
+		padding: 0.4em 0;
+	}
+}
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav {
+		float:none;
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #EEE;
+	}
+}
+/*---- benner ----*/
+.banner-info{
+	padding: 2em 0 12em;
+}
+.banner-info h1{
+	font-weight: 700;
+	font-size: 3.5em;
+	color: #FFF;
+	width: 100%;
+	display: inline-block;
+	line-height: 1.3em;
+}
+.banner-info span{
+	width:15%;
+	height:1px;
+	background:#35C2F8;
+	display:inline-block;
+}
+.banner-info p{
+	color: #CCCCCC;
+	font-weight:400;
+	font-size: 1.3em;
+	line-height: 1.7em;
+	font-family: 'Open Sans', sans-serif;
+	margin: 1em auto;
+	width: 50%;
+}
+
+/*---- responsive-design ----*/
+@media (max-width:1366px){
+	.container{
+		width:80%;
+	}
+}
+@media (max-width:1280px){
+	.container{
+		width:80%;
+	}
+	.portfolio-work-grid-caption {
+		padding: 4.5em 2em 0em 2em;
+	}
+}
+@media (max-width:1024px){
+	.container{
+		width:80%;
+	}
+	.portfolio-work-grid-caption {
+		padding: 2.4em 1em 0em 1em;
+	}
+	.banner-info h1 {
+		font-size: 3.2em;
+		width: 80%;
+	}
+	.banner-info p {
+		width: 60%;
+	}
+	.e-left-inner-grid-right {
+		width: 80%;
+	}
+}
+@media (max-width:768px){
+	.container{
+		width:80%;
+	}
+	.portfolio-work-grid-caption {
+		padding: 2.4em 1em 0em 1em;
+	}
+	.banner-info h1 {
+		font-size: 2.8em;
+		width: 100%;
+	}
+	.banner-info p {
+		width: 90%;
+	}
+}
+@media (max-width:640px){
+	.container{
+		width:80%;
+	}
+	.portfolio-work-grid-caption {
+		padding: 2.4em 1em 0em 1em;
+	}
+	.banner-info {
+		padding: 5em 0 7em;
+	}
+	.banner-info h1 {
+		font-size: 2.3em;
+		width: 100%;
+	}
+	.banner-info p {
+		width: 100%;
+		font-size: 1.2em;
+	}
+}
+@media (max-width:480px){
+	.container{
+		width:80%;
+	}
+	.portfolio-work-grid-caption {
+		padding: 2.4em 1em 0em 1em;
+	}
+	.banner-info {
+		padding: 3em 0 4em;
+	}
+	.banner-info h1 {
+		font-size: 1.7em;
+		width: 100%;
+	}
+	.banner-info p {
+		width: 100%;
+		font-size: 0.875em;
+	}
+}
+@media (max-width:320px){
+	.container{
+		width:90%;
+	}
+	.portfolio-work-grid-caption {
+		padding: 0.5em 1em 0em 1em;
+	}
+	.banner-info {
+		padding: 2em 0 3em;
+	}
+	.banner-info h1 {
+		font-size: 1.2em;
+		width: 100%;
+	}
+	.banner-info p {
+		width: 100%;
+		font-size: 0.875em;
+	}
+}
+
+.brand {
+	color: #e5c100;
+	background: inherit !important;
+}

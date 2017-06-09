@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- SEO -->
+		<title>Bayarkan</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+        <style>
+            body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin button {
+    margin-top:10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+        </style>
+        <div class="container">
+
+          <form class="form-signin"  action="" method="post">
+              <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email"required autofocus>
+            <label for="username" class="sr-only">Username</label>
+            <input type="username" id="username" name="username" class="form-control" placeholder="Username" required>
+            <label for="password" class="sr-only"  >Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+            <label for="inputConfirmPassword" class="sr-only">Konfirmasi Password</label>
+            <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Konfirmasi Password" required>
+              {% if error %} <p>{{ error }}</p> {% endif %}
+            <button class="btn btn-lg btn-primary btn-default btn-block" type="submit" >Register</button>
+          </form>
+
+        </div> <!-- /container -->
+      </head>
+  </html>

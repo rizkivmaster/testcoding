@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- SEO -->
+		<title>Bayarkan</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+        <style>
+            body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+        </style>
+        <div class="container">
+
+          <form class="form-signin" action="" method="post">
+            <label for="username" class="sr-only">Username</label>
+            <input type="username" id="username" name="username" class="form-control" placeholder="Username" required autofocus value="{{
+                   request.form.username }}">
+            <label for="password" class="sr-only">Password</label>
+
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required value="{{
+          request.form.password }}">
+              {% if error %} <p>{{ error|safe }}</p> {% endif %}
+            <button class="btn btn-lg btn-primary btn-default btn-block" type="submit" style="{background:white; color:white}">Sign in</button>
+            <a href="">Lupa Password?</a>
+              <div><a href="{{ url_for('.user_register') }}" class="btn btn-default">Tidak mempunyai akun? Register</a></div>
+
+
+          </form>
+
+        </div> <!-- /container -->
+      </head>
+  </html>
