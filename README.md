@@ -3,14 +3,13 @@ The website was developed in python-flask.
 
 To run the website, the developer should make sure that virtualenv installed and the dependencies has already updated. You can do it by executing:
 sudo virtualenv venv
-venv ./bin/activate
+. venv/bin/activate
 pip install -r requirements.txt
 
 Having them set up, continue to execute the python program:
 python bws.py
 
-
-
+To open the website, please hit http://127.0.0.1:29000/.
 
 What has already implemented in this project are following:
 1. User Login
